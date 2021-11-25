@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+    --primary-color: #F76B05;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+    max-height: 90%;
+}
+
+.section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+header nav.navbar {
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+header nav.navbar .navbar-brand {
+    color: #FFF;
+    font-size: 1.4rem;
+}
+
+header nav.navbar .navbar-nav .nav-item {
+    margin-right: .5rem;
+}
+
+header nav.navbar .navbar-nav .nav-item .nav-link {
+    padding: .5rem;
+    color: #FFF;
+    transition: .3s;
+}
+
+header nav.navbar .navbar-nav .nav-item .nav-link:hover, header nav.navbar .navbar-nav .nav-item.active .nav-link {
+    color: var(--primary-color);
+}
+
+header nav.navbar .navbar-toggler {
+    color: #FFF;
+    font-size: 1.3rem;
+    cursor: pointer;
+    z-index: 999;
+    outline: none;
+    background-color: var(--primary-color);
+}
+
+header{
+    background-image: url(../img/1.jpg);
+}
+
+.galeria h2 {
+    text-align: center;
+    color: #111;
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+.galeria p {
+    font-weight: 500;
+    font-size: 1rem;
+    color: #333;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.galeria .images .imgBox {
+    width: 70%;
+    height: 70%;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.galeria .images .imgBox div img {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.galeria .images .imgBox div:hover img {
+    transform: scale(1.1);
+}
+
+.galeria .images .imgBox div {
+    position: relative;
+    overflow: hidden;
+}
+
+.galeria .images .imgBox div::after {
+    transition: .4s;
+    cursor: pointer;
+}
+
+.galeria .images .imgBox:hover div::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.galeria .images .imgBox div:hover::before {
+    content: "Eventos";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.contact {
+    background: url(../images/4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    margin-top: 30px;
+}
+
+.contact::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, .3);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.contact .container {
+    position: relative;
+    z-index: 10;
+    color: #FFF;
+}
+
+.contact .container h2 {
+    text-align: center;
+    font-weight: 800;
+    color: #FFF;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+
+.contact .container .content {
+    width: 100%;
+}
+
+.contact .container .content ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 200px;
+}
+
+.contact .container .content ul li {
+    background: #f1f1f1;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.contact .container .content ul li a {
+    font-size: 1rem;
+    color: #111;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.contact .container .content ul li a:hover {
+    color: var(--primary-color);
+}
+
+.contact .container .content ul li a i {
+    font-size: 2.3rem;
+    margin-right: .5rem;
+}
+
+footer {
+    background-color: #222;
+}
+
+footer .footer .divider {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+}
+
+footer .footer .footer-bottom {
+    color: #FFF;
+    text-align: center;
+    font-size: 1rem;
+}
